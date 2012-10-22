@@ -1,5 +1,6 @@
 
 body {
+  color: #101010;
   font-family: Helvetica, Arial;
 }
 
@@ -26,22 +27,36 @@ body {
   margin-top: 100px;
 }
 
-.icon {
-  height: 40px;
-  width: 40px;
-  margin: 0px 5px;
-  opacity: 0.5;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
 .icon:hover {
   opacity: 1;
 }
 
 #links {
+  font-size: 22px;
+  width: 160px;
+  text-align: center;
   float: left;
   clear: left;
   margin: auto;
 }
+
+a {
+  color: #101010;
+  transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #101010;
+}
+
+a:hover {
+  transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+  color: #850049;
+}
+
+
