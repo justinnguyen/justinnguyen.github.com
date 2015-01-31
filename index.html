@@ -1,4 +1,16 @@
 ---
 layout: main
-title: Home / Justin Nguyen
+title: Justin Nguyen
 ---
+<h1>Things I've Written</h1>
+{% if site.posts.size == 0 %}
+<img src="/static/tumbleweed.gif" style="display:block;margin-left:auto;margin-right:auto">
+{% endif %}
+<ul>
+  {% for post in site.posts %}
+    <li class="posts">
+      <a href="{{ post.url }}"><strong>{{ post.date | date: '%B %d, %Y' }}: {{ post.title }}</strong></a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ol>
